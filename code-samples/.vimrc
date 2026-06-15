@@ -1,3 +1,7 @@
-set colorcolumn=73
+set colorcolumn=65
+set shiftwidth=8
+set tabstop=8
+set softtabstop=8
 
-imap <leader>main<Space> def<Space>main()<Space>-><Space>None:<CR><CR><CR><Backspace>if<Space>__name__<Space>==<Space>'__main__':<CR>main()<Up><Up><Up><Tab>
+inoremap <leader>main<Space> int<Space>main(void)<Space>{<CR><CR>}<Up><Tab>
+inoremap <leader>stdio<Space> #include<Space><stdio.h><CR>
